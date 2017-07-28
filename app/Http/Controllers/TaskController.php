@@ -32,7 +32,7 @@ public function create()
 
   $task= new Task();
   $task->titre=$request->input('titre');
-  $task->id_category=$request->input('id_category');
+  $task->category_id=$request->input('category_id');
   $task->save();
 
 return redirect('/tasks');

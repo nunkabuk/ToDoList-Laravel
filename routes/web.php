@@ -27,7 +27,7 @@ Route::get('tasks/check/{id}', 'TaskController@check');
 Route::get('categories', function () {
     $categories=App\Category::find(1);
     $task=new App\Task;
-    $task->id_category=$categories->id;
+    $task->category_id=$categories->id;
   $task->save();
  dd([$task=$categories->$task]);
   });

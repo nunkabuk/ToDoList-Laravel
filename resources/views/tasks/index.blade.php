@@ -20,24 +20,21 @@
       <div class="afaire">
         <h1>TO DO</h1>
             @foreach($tasks as $task)
+        <p>{{$task->category->name}}</p>
             @if ($task->do == 0)
                 <li>
-
                     <a href="tasks/check/{{$task->id}}">{{$task->titre}}</a>
                     <a href="tasks/show/{{$task->id}}/edit"><i class="fa fa-cog" aria-hidden="true"></i></a>
                     <a href="tasks/delete/{{$task->id}}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                
                 </li>
 
-          @elseif ($task->do == 1)
-              <li>
-
+            @elseif ($task->do == 1)
+               <li>
                   <span class='titanic titanic-checkbox'style="width:30px;display:inline-block;"onclick="titanic.on(getElementById('checkbox').value)"></span>
                   {{$task->titre}}
                   <a href="tasks/show/{{$task->id}}/edit"><i class="fa fa-cog" aria-hidden="true"></i></a>
                   <a href="tasks/delete/{{$task->id}}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-
-            </li>
+               </li>
 
     <!--Initializing-->
 

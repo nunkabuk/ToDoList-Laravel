@@ -12,7 +12,7 @@
       <label for="titre">nouvelle tache</label>
       <input type="text" name="titre" id="titre">
       <label for="cate">categories</label>
-      <select class="cate" name="id_category">
+      <select class="cate" name="category_id">
         @foreach ($categories as  $category):
             <option value="{{$category->id}}">{{$category->name}}</option>
       @endforeach

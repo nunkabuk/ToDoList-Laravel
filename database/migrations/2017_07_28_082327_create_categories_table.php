@@ -19,7 +19,7 @@ class CreateCategoriesTable extends Migration
         $table->string('name');
     });
          Schema::table('tasks', function (Blueprint $table) {
-        $table->integer('id_category')->nullable();
+        $table->integer('category_id')->nullable();
 });
     }
 
