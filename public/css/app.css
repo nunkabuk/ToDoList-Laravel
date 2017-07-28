@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);h1 {
+  text-align: center;
+}
+
+.afaire {
+  background: url("/image/ardoise.jpeg") no-repeat center center;
+  background-size: contain;
+  font-family: 'Rock Salt', cursive;
+  padding-top: 15%;
+  font-size: 1.3em;
+  text-align: center;
+  height: 704px;
+}
+
+.tache {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+
+a {
+  color: black;
+}
+
+.nvlle {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.stylo {
+  color: #008c89;
+  margin-top: 3%;
+  margin-left: 17%;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.titanic titanic-checkbox {
+  width: 12%;
+  height: 12%;
+  display: inline-block;
+}
+
+i:hover {
+  color: #008c89;
+}
+
